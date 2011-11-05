@@ -1,0 +1,41 @@
+This is a redistribution of caffeinate, a command line tool developed by Apple.
+
+caffeinate.c is copied from PowerManagement-271.1[1].
+IOKit/pwd_mgt/IOPMLibPrivate.h is copied from IOKitUser-647.6.10[2].
+
+[1]: http://opensource.apple.com/source/PowerManagement/PowerManagement-271.1/
+[2]: http://opensource.apple.com/source/IOKitUser/IOKitUser-647.6.10/
+
+------------------------------------------------------------------------------
+CAFFEINATE(8)             BSD System Manager's Manual            CAFFEINATE(8)
+
+NAME
+     caffeinate -- prevent the system from sleeping on behalf of a utility
+
+SYNOPSIS
+     caffeinate [-disb] [utility] [argument ...]
+
+DESCRIPTION
+     caffeinate creates assertions to alter system sleep behavior.  If no
+     assertion flags are specified, caffeinate creates an assertion to prevent
+     idle sleep.  If a utility is specified, caffeinate creates the assertions
+     on the utility's behalf, and those assertions will persist for the dura-
+     tion of the utility's execution. Otherwise, caffeinate creates the asser-
+     tions directly, and those assertions will persist until caffeinate exits.
+
+     Available options:
+
+     -d      Create an assertion to prevent the display from sleeping.
+
+     -i      Create an assertion to prevent the system from idle sleeping.
+
+     -s      Create an assertion to prevent the system from sleeping. By
+             default, this assertion is valid only when system is running on
+             AC power. If -b flag is also specified, then the system is pre-
+             vented from sleeping even when running on battery power.
+
+LOCATION
+     /usr/bin/caffeinate
+
+Darwin                         February 25, 2010                        Darwin
+------------------------------------------------------------------------------

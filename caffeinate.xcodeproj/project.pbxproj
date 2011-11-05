@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5803EDE81465C6A000798CAA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5803EDE71465C6A000798CAA /* CoreFoundation.framework */; };
+		5803EDEB1465C6A000798CAA /* caffeinate.c in Sources */ = {isa = PBXBuildFile; fileRef = 5803EDEA1465C6A000798CAA /* caffeinate.c */; };
+		5803EDF51465C71F00798CAA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5803EDF41465C71F00798CAA /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5803EDE11465C6A000798CAA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5803EDE31465C6A000798CAA /* caffeinate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = caffeinate; sourceTree = BUILT_PRODUCTS_DIR; };
+		5803EDE71465C6A000798CAA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5803EDEA1465C6A000798CAA /* caffeinate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = caffeinate.c; sourceTree = "<group>"; };
+		5803EDF31465C70800798CAA /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IOKit; sourceTree = "<group>"; };
+		5803EDF41465C71F00798CAA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5803EDE01465C6A000798CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5803EDE81465C6A000798CAA /* CoreFoundation.framework in Frameworks */,
+				5803EDF51465C71F00798CAA /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5803EDD81465C6A000798CAA = {
+			isa = PBXGroup;
+			children = (
+				5803EDE91465C6A000798CAA /* caffeinate */,
+				5803EDE61465C6A000798CAA /* Frameworks */,
+				5803EDE41465C6A000798CAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5803EDE41465C6A000798CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5803EDE31465C6A000798CAA /* caffeinate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5803EDE61465C6A000798CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5803EDE71465C6A000798CAA /* CoreFoundation.framework */,
+				5803EDF41465C71F00798CAA /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5803EDE91465C6A000798CAA /* caffeinate */ = {
+			isa = PBXGroup;
+			children = (
+				5803EDF31465C70800798CAA /* IOKit */,
+				5803EDEA1465C6A000798CAA /* caffeinate.c */,
+			);
+			path = caffeinate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5803EDE21465C6A000798CAA /* caffeinate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5803EDF01465C6A000798CAA /* Build configuration list for PBXNativeTarget "caffeinate" */;
+			buildPhases = (
+				5803EDDF1465C6A000798CAA /* Sources */,
+				5803EDE01465C6A000798CAA /* Frameworks */,
+				5803EDE11465C6A000798CAA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = caffeinate;
+			productName = caffeinate;
+			productReference = 5803EDE31465C6A000798CAA /* caffeinate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5803EDDA1465C6A000798CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = isdead.info;
+			};
+			buildConfigurationList = 5803EDDD1465C6A000798CAA /* Build configuration list for PBXProject "caffeinate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5803EDD81465C6A000798CAA;
+			productRefGroup = 5803EDE41465C6A000798CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5803EDE21465C6A000798CAA /* caffeinate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5803EDDF1465C6A000798CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5803EDEB1465C6A000798CAA /* caffeinate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5803EDEE1465C6A000798CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5803EDEF1465C6A000798CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5803EDF11465C6A000798CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5803EDF21465C6A000798CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5803EDDD1465C6A000798CAA /* Build configuration list for PBXProject "caffeinate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5803EDEE1465C6A000798CAA /* Debug */,
+				5803EDEF1465C6A000798CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5803EDF01465C6A000798CAA /* Build configuration list for PBXNativeTarget "caffeinate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5803EDF11465C6A000798CAA /* Debug */,
+				5803EDF21465C6A000798CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5803EDDA1465C6A000798CAA /* Project object */;
+}
